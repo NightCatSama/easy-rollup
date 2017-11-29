@@ -1,0 +1,14 @@
+@import './util';
+@import 'reset';
+
+body {
+	width: 100vw;
+	height: 100vh;
+	@include flex-center;
+}
+
+#app {
+  font-family: HelveticaNeue-Bold;
+  font-size: 50px;
+  color: $blue;
+}
