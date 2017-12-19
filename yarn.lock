@@ -991,6 +991,10 @@ commander@^2.2.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
+compare-versions@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/compare-versions/-/compare-versions-2.0.1.tgz#1edc1f93687fd97a325c59f55e45a07db106aca6"
+
 component-bind@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/component-bind/-/component-bind-1.0.0.tgz#00c608ab7dcd93897c0009651b1d3a8e1e73bbd1"
@@ -1465,6 +1469,12 @@ eslint-plugin-promise@^3.6.0:
 eslint-plugin-standard@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-3.0.1.tgz#34d0c915b45edc6f010393c7eef3823b08565cf2"
+
+eslint-plugin-typescript@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-typescript/-/eslint-plugin-typescript-0.8.1.tgz#e5b2d18e744a04528eac58b099fe1032c4d744ff"
+  dependencies:
+    requireindex "~1.1.0"
 
 eslint-scope@^3.7.1:
   version "3.7.1"
@@ -2522,6 +2532,10 @@ lodash.mergewith@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.0.tgz#150cf0a16791f5903b8891eab154609274bdea55"
 
+lodash.unescape@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/lodash.unescape/-/lodash.unescape-4.0.1.tgz#bf2249886ce514cda112fae9218cdc065211fc9c"
+
 lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -3521,6 +3535,10 @@ require-uncached@^1.0.2, require-uncached@^1.0.3:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
 
+requireindex@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.1.0.tgz#e5404b81557ef75db6e49c5a72004893fe03e162"
+
 requires-port@1.x.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
@@ -3629,6 +3647,16 @@ rollup-plugin-sass@^0.5.3:
     node-sass ">= 3.8.0"
     rollup-pluginutils ">= 1.3.1"
 
+rollup-plugin-typescript@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-typescript/-/rollup-plugin-typescript-0.8.1.tgz#2ff7eecc21cf6bb2b43fc27e5b688952ce71924a"
+  dependencies:
+    compare-versions "2.0.1"
+    object-assign "^4.0.1"
+    rollup-pluginutils "^1.3.1"
+    tippex "^2.1.1"
+    typescript "^1.8.9"
+
 rollup-plugin-uglify@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/rollup-plugin-uglify/-/rollup-plugin-uglify-1.0.2.tgz#d4aa6f5df13522eae1ba17780c7c4c7096038359"
@@ -3716,6 +3744,10 @@ scss-tokenizer@^0.2.3:
 "semver@2 || 3 || 4 || 5", semver@5.3.0, semver@^5.3.0, semver@~5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
+
+semver@5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.4.1.tgz#e059c09d8571f0540823733433505d3a2f00b18e"
 
 send@0.15.2:
   version "0.15.2"
@@ -4080,6 +4112,10 @@ through@^2.3.6:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
 
+tippex@^2.1.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/tippex/-/tippex-2.3.1.tgz#a2fd5b7087d7cbfb20c9806a6c16108c2c0fafda"
+
 tmp@^0.0.33:
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.33.tgz#6d34335889768d21b2bcda0aa277ced3b1bfadf9"
@@ -4131,6 +4167,21 @@ type-check@~0.3.2:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+typescript-eslint-parser@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/typescript-eslint-parser/-/typescript-eslint-parser-11.0.0.tgz#37dba6a0130dd307504aa4b4b21b0d3dc7d4e9f2"
+  dependencies:
+    lodash.unescape "4.0.1"
+    semver "5.4.1"
+
+typescript@^1.8.9:
+  version "1.8.10"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-1.8.10.tgz#b475d6e0dff0bf50f296e5ca6ef9fbb5c7320f1e"
+
+typescript@^2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
 
 ua-parser-js@0.7.12:
   version "0.7.12"

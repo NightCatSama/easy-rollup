@@ -8,6 +8,7 @@ import uglify from 'rollup-plugin-uglify'
 import sass from 'rollup-plugin-sass'
 import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
+import typescript from 'rollup-plugin-typescript'
 
 import browserSync from 'browser-sync'
 
@@ -24,13 +25,21 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 export default {
-  input: 'src/scripts/main.js',
+  input: 'src/scripts/main.ts',
   sourcemap: 'inline',
   output: {
     file: 'build/js/main.min.js',
     format: 'umd'
   },
   plugins: [
+    eslint({
+      exclude: [
+        'src/styles/**',
+      ]
+    }),
+    typescript({
+      typescript: require('typescript')
+    }),
     sass({
       processor: css => postcss([ autoprefixer({ browsers: [] }) ])
         .process(css)
@@ -43,11 +52,6 @@ export default {
       browser: true,
     }),
     commonjs(),
-    eslint({
-      exclude: [
-        'src/styles/**',
-      ]
-    }),
     babel({
       exclude: 'node_modules/**',
     }),

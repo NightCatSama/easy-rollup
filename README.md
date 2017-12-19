@@ -4,6 +4,7 @@ Generate projects quickly and easily
 
 ## Plugins
 
+- Typescript
 - Scss
 - Babel
 - Eslint
