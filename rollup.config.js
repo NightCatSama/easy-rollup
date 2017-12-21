@@ -27,9 +27,9 @@ if (process.env.NODE_ENV === 'development') {
 
 export default {
   input: 'src/scripts/main.ts',
-  sourcemap: 'inline',
   output: {
     file: 'build/js/main.min.js',
+    sourcemap: true,
     format: 'umd'
   },
   plugins: [
