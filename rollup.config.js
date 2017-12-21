@@ -9,6 +9,7 @@ import sass from 'rollup-plugin-sass'
 import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
 import typescript from 'rollup-plugin-typescript'
+import json from 'rollup-plugin-json'
 
 import browserSync from 'browser-sync'
 
@@ -36,6 +37,9 @@ export default {
       exclude: [
         'src/styles/**',
       ]
+    }),
+    json({
+      exclude: 'node_modules/**',
     }),
     typescript({
       typescript: require('typescript')
